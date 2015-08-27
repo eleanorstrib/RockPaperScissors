@@ -25,11 +25,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func computerPick() -> String{
+    func computerPick() -> UInt32?{
         //chooses a value for the computer's selection
-        let choiceArray = ["rock", "paper", "scissors"]
-        let computerChoiceIndex = Int(arc4random_uniform(3)+1)
-        let computerChoice = choiceArray[computerChoiceIndex]
+        let computerChoice = arc4random_uniform(3)
         println(computerChoice)
         return(computerChoice)
     }
