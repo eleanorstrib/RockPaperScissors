@@ -24,7 +24,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func computerPick() -> String{
+        //chooses a value for the computer's selection
+        let choiceArray = ["rock", "paper", "scissors"]
+        let computerChoiceIndex = Int(arc4random_uniform(3)+1)
+        let computerChoice = choiceArray[computerChoiceIndex]
+        println(computerChoice)
+        return(computerChoice)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController as! resultViewController
+        controller.computerChoice = self.computerPick()
+    }
 
 }
 

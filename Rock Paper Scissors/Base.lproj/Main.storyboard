@@ -21,6 +21,9 @@
                                 <state key="normal" image="rock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="computerPick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gid-6y-HRi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQt-yR-mAb">
                                 <rect key="frame" x="262" y="267" width="75" height="65"/>
@@ -78,21 +81,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-q0-yhW">
-                                <rect key="frame" x="211" y="440" width="178" height="30"/>
+                                <rect key="frame" x="239" y="431" width="122" height="39"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                 <state key="normal" title="Play again!">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="dismissResult:" destination="ScD-WZ-gmY" eventType="touchUpInside" id="5Ul-Kz-8NJ"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64u-LM-XgF">
+                                <rect key="frame" x="209" y="56" width="183" height="200"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="64u-LM-XgF" secondAttribute="centerX" id="5Qo-fH-pnz"/>
+                            <constraint firstItem="64u-LM-XgF" firstAttribute="top" secondItem="5zm-Xx-B1f" secondAttribute="bottom" constant="36" id="5td-7R-oJg"/>
                             <constraint firstItem="y0O-fc-apI" firstAttribute="top" secondItem="rSI-q0-yhW" secondAttribute="bottom" constant="130" id="LDk-iL-U4x"/>
                             <constraint firstAttribute="centerX" secondItem="rSI-q0-yhW" secondAttribute="centerX" id="mQw-Z2-0TV"/>
                         </constraints>
                         <connections>
                             <outlet property="playAgainButton" destination="rSI-q0-yhW" id="HeR-SV-nCs"/>
+                            <outlet property="resultImage" destination="64u-LM-XgF" id="qt3-X2-WAg"/>
                         </connections>
                     </view>
                 </viewController>
