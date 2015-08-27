@@ -11,6 +11,7 @@ import UIKit
 
 class resultViewController: UIViewController {
     var computerChoice: UInt32?
+    var playerChoice: UInt32?
     let choiceArray = ["rock", "paper", "scissors"]
     
     @IBOutlet weak var resultImage: UIImageView!
@@ -21,7 +22,7 @@ class resultViewController: UIViewController {
         
         switch UInt32(self.computerChoice!) {
             case 0:
-                println(choiceArray[0])
+                println(choiceArray[1])
             case 1:
                 println(choiceArray[1])
             case 2:

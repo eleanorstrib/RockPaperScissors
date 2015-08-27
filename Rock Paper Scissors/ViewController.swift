@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let playerChoice = UInt32(0)
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
@@ -32,9 +33,27 @@ class ViewController: UIViewController {
         return(computerChoice)
     }
     
+    //start functions for player selection
+    @IBAction func rockSelect(sender: UIButton) {
+        let playerChoice = UInt32(0)
+        println("Player choice was 0")
+    }
+    
+    @IBAction func paperSelect(sender: UIButton) {
+        let playerChoice = UInt32(1)
+        println("Player choice was 1")
+    }
+    
+    @IBAction func scissorsSelect(sender: UIButton) {
+        let playerChoice = UInt32(2)
+        println("Player choice was 2")
+    }
+    // end functions for player selections
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller = segue.destinationViewController as! resultViewController
         controller.computerChoice = self.computerPick()
+        controller.playerChoice = playerChoice
     }
 
 }
