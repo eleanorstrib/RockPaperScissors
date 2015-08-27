@@ -11,6 +11,7 @@ import UIKit
 
 class resultViewController: UIViewController {
     
+    @IBOutlet weak var playAgainButton: UIButton!
 
 
 

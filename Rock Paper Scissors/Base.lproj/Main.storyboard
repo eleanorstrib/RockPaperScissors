@@ -76,7 +76,24 @@
                     <view key="view" contentMode="scaleToFill" id="ScD-WZ-gmY" customClass="resultViewController">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-q0-yhW">
+                                <rect key="frame" x="211" y="440" width="178" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Play again!">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y0O-fc-apI" firstAttribute="top" secondItem="rSI-q0-yhW" secondAttribute="bottom" constant="130" id="LDk-iL-U4x"/>
+                            <constraint firstAttribute="centerX" secondItem="rSI-q0-yhW" secondAttribute="centerX" id="mQw-Z2-0TV"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="playAgainButton" destination="rSI-q0-yhW" id="HeR-SV-nCs"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HN2-N0-B2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
