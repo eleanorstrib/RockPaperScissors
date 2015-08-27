@@ -15,8 +15,51 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cT9-KC-lac">
+                                <rect key="frame" x="152" y="267" width="75" height="65"/>
+                                <state key="normal" image="rock">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQt-yR-mAb">
+                                <rect key="frame" x="262" y="267" width="75" height="65"/>
+                                <state key="normal" image="paper">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-5J-FRk">
+                                <rect key="frame" x="372" y="267" width="75" height="65"/>
+                                <state key="normal" image="scissors">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ready?  Click rock, paper or scissors..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdZ-u6-daC">
+                                <rect key="frame" x="164" y="226" width="272" height="21"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="HdZ-u6-daC" secondAttribute="centerX" id="0KS-Q4-WqH"/>
+                            <constraint firstAttribute="centerY" secondItem="hWM-5J-FRk" secondAttribute="centerY" id="6yZ-62-knH"/>
+                            <constraint firstAttribute="centerX" secondItem="oQt-yR-mAb" secondAttribute="centerX" id="EdO-rO-2Wm"/>
+                            <constraint firstItem="hWM-5J-FRk" firstAttribute="leading" secondItem="oQt-yR-mAb" secondAttribute="trailing" constant="35" id="IXO-5R-oAF"/>
+                            <constraint firstAttribute="centerY" secondItem="oQt-yR-mAb" secondAttribute="centerY" id="Rh8-ka-qhY"/>
+                            <constraint firstAttribute="centerY" secondItem="cT9-KC-lac" secondAttribute="centerY" id="emQ-wH-bpc"/>
+                            <constraint firstItem="oQt-yR-mAb" firstAttribute="top" secondItem="HdZ-u6-daC" secondAttribute="bottom" constant="20" id="rC6-Ra-38J"/>
+                            <constraint firstItem="oQt-yR-mAb" firstAttribute="leading" secondItem="cT9-KC-lac" secondAttribute="trailing" constant="35" id="s1i-de-cDj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="instructionsLabel" destination="HdZ-u6-daC" id="Nq6-Eg-JTN"/>
+                        <outlet property="paperButton" destination="oQt-yR-mAb" id="woZ-Go-3C8"/>
+                        <outlet property="rockButton" destination="cT9-KC-lac" id="tKy-9D-Mp3"/>
+                        <outlet property="scissorsButton" destination="hWM-5J-FRk" id="NKu-p0-qqd"/>
+                        <segue destination="pHg-Gd-YGC" kind="presentation" identifier="resultScreen" id="Imo-fA-GPk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,7 +81,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HN2-N0-B2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="462"/>
+            <point key="canvasLocation" x="1469" y="462"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paper" width="75" height="65"/>
+        <image name="rock" width="75" height="65"/>
+        <image name="scissors" width="75" height="65"/>
+    </resources>
 </document>
