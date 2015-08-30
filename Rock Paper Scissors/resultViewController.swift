@@ -22,10 +22,31 @@ class resultViewController: UIViewController {
         
         switch UInt32(self.computerChoice!) {
             case 0:
+                if playerChoice == 0 {
+                    println("it's a tie!")
+                } else if playerChoice == 1 {
+                    println("paper covers rock, you win!")
+                } else {
+                    println("rock smashes scissors - you lose")
+                }
                 println(choiceArray[1])
             case 1:
+                if playerChoice == 0 {
+                    println("paper covers rock, you lose!")
+                } else if playerChoice == 1 {
+                    println("it's a tie!")
+                } else {
+                    println("scissors cut paper - you win!")
+                }
                 println(choiceArray[1])
             case 2:
+                if playerChoice == 0 {
+                    println("rock smashes scissors - you lose")
+                } else if playerChoice == 1 {
+                    println("scissors cut paper - you win!")
+                } else {
+                    println("it's a tie!")
+                }
                 println(choiceArray[2])
             default:
                 println("something went wrong")
