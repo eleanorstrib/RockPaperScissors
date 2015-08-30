@@ -20,35 +20,30 @@ class resultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        switch UInt32(self.computerChoice!) {
-            case 0:
-                if playerChoice == 0 {
-                    println("it's a tie!")
-                } else if playerChoice == 1 {
-                    println("paper covers rock, you win!")
-                } else {
-                    println("rock smashes scissors - you lose")
-                }
-                println(choiceArray[1])
-            case 1:
-                if playerChoice == 0 {
-                    println("paper covers rock, you lose!")
-                } else if playerChoice == 1 {
-                    println("it's a tie!")
-                } else {
-                    println("scissors cut paper - you win!")
-                }
-                println(choiceArray[1])
-            case 2:
-                if playerChoice == 0 {
-                    println("rock smashes scissors - you lose")
-                } else if playerChoice == 1 {
-                    println("scissors cut paper - you win!")
-                } else {
-                    println("it's a tie!")
-                }
-                println(choiceArray[2])
+        switch (self.computerChoice!) {
+            case 0, 1, 2 where self.playerChoice == self.computerChoice:
+                self.resultImage.image = UIImage(named: "tie")
+                println("tie")
+            case 0 where self.playerChoice == 1:
+                self.resultImage.image = UIImage(named: "paperCoversRock")
+                println("You win, paper covers rock")
+            case 0 where self.playerChoice == 2:
+                self.resultImage.image = UIImage(named: "rockCrushesScissors")
+                println("you lose, rock crushes scissors")
+            case 1 where self.playerChoice == 0:
+                self.resultImage.image = UIImage(named: "paperCoversRock")
+                println("paper covers rock, you lose")
+            case 1 where self.playerChoice == 2:
+                self.resultImage.image = UIImage(named: "scissorsCutPaper")
+                println("scissors cut paper you lose")
+            case 2 where self.playerChoice == 0:
+                self.resultImage.image = UIImage(named: "rockCrushesScissors")
+                println("rock crushes scissors, you lose")
+            case 2 where self.playerChoice == 1:
+                self.resultImage.image = UIImage(named: "scissorsCutPaper")
+                println("scissors cut paper you win")
             default:
+                self.resultImage.image = nil
                 println("something went wrong")
 
     }
