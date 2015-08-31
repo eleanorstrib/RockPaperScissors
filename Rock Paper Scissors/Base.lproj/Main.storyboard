@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="ViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -22,7 +22,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="rockSelect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mVc-BP-ZCB"/>
+                                    <action selector="rockSelect" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uOr-DC-xp7"/>
+                                    <action selector="selectRock" destination="vXZ-lx-hvc" eventType="touchUpInside" id="opL-Re-OY9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQt-yR-mAb">
@@ -43,41 +44,32 @@
                                     <action selector="scissorsSelect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EZg-pZ-mAl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ready?  Click rock, paper or scissors..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdZ-u6-daC">
-                                <rect key="frame" x="164" y="226" width="272" height="21"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="HdZ-u6-daC" secondAttribute="centerX" id="0KS-Q4-WqH"/>
                             <constraint firstAttribute="centerY" secondItem="hWM-5J-FRk" secondAttribute="centerY" id="6yZ-62-knH"/>
                             <constraint firstAttribute="centerX" secondItem="oQt-yR-mAb" secondAttribute="centerX" id="EdO-rO-2Wm"/>
                             <constraint firstItem="hWM-5J-FRk" firstAttribute="leading" secondItem="oQt-yR-mAb" secondAttribute="trailing" constant="35" id="IXO-5R-oAF"/>
                             <constraint firstAttribute="centerY" secondItem="oQt-yR-mAb" secondAttribute="centerY" id="Rh8-ka-qhY"/>
                             <constraint firstAttribute="centerY" secondItem="cT9-KC-lac" secondAttribute="centerY" id="emQ-wH-bpc"/>
-                            <constraint firstItem="oQt-yR-mAb" firstAttribute="top" secondItem="HdZ-u6-daC" secondAttribute="bottom" constant="20" id="rC6-Ra-38J"/>
                             <constraint firstItem="oQt-yR-mAb" firstAttribute="leading" secondItem="cT9-KC-lac" secondAttribute="trailing" constant="35" id="s1i-de-cDj"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="instructionsLabel" destination="HdZ-u6-daC" id="Nq6-Eg-JTN"/>
                         <outlet property="paperButton" destination="oQt-yR-mAb" id="woZ-Go-3C8"/>
-                        <outlet property="rockButton" destination="cT9-KC-lac" id="tKy-9D-Mp3"/>
+                        <outlet property="rockButton" destination="cT9-KC-lac" id="adm-uL-5QB"/>
                         <outlet property="scissorsButton" destination="hWM-5J-FRk" id="NKu-p0-qqd"/>
                         <segue destination="pHg-Gd-YGC" kind="presentation" identifier="resultScreen" id="Imo-fA-GPk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="462"/>
+            <point key="canvasLocation" x="966" y="504"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="LN2-Lm-zMx">
             <objects>
-                <viewController id="pHg-Gd-YGC" customClass="resultViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pHg-Gd-YGC" customClass="resultViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5zm-Xx-B1f"/>
                         <viewControllerLayoutGuide type="bottom" id="y0O-fc-apI"/>
@@ -86,6 +78,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64u-LM-XgF">
+                                <rect key="frame" x="209" y="56" width="183" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="result goes here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdd-Ac-hDC">
+                                <rect key="frame" x="42" y="289" width="517" height="21"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-q0-yhW">
                                 <rect key="frame" x="239" y="431" width="122" height="39"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
@@ -97,15 +98,6 @@
                                     <action selector="dismissResult:" destination="ScD-WZ-gmY" eventType="touchUpInside" id="5Ul-Kz-8NJ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64u-LM-XgF">
-                                <rect key="frame" x="209" y="56" width="183" height="200"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="result goes here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdd-Ac-hDC">
-                                <rect key="frame" x="42" y="289" width="517" height="21"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -125,8 +117,9 @@
                             </mask>
                         </variation>
                         <connections>
-                            <outlet property="playAgainButton" destination="rSI-q0-yhW" id="HeR-SV-nCs"/>
-                            <outlet property="resultImage" destination="64u-LM-XgF" id="qt3-X2-WAg"/>
+                            <outlet property="playAgainButton" destination="rSI-q0-yhW" id="LAx-Sj-JFH"/>
+                            <outlet property="resultImage" destination="64u-LM-XgF" id="x84-Bd-e3L"/>
+                            <outlet property="resultText" destination="cdd-Ac-hDC" id="Rt6-Db-ZIC"/>
                         </connections>
                     </view>
                 </viewController>

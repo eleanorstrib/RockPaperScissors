@@ -12,10 +12,11 @@ import UIKit
 class resultViewController: UIViewController {
     var computerChoice: UInt32?
     var playerChoice: UInt32?
-    let choiceArray = ["rock", "paper", "scissors"]
     
     @IBOutlet weak var resultImage: UIImageView!
+    @IBOutlet weak var resultText: UILabel!
     @IBOutlet weak var playAgainButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

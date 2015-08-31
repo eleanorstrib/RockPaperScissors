@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
-    @IBOutlet weak var instructionsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +32,18 @@ class ViewController: UIViewController {
         return(computerChoice)
     }
     
-    //start functions for player selection
-    @IBAction func rockSelect(sender: UIButton) {
+    //rock player selection and segue
+    @IBAction func rockSelect(){
         let playerChoice = UInt32(0)
         println("Player choice was 0")
+    }
+    
+    @IBAction func selectRock(){
+        var controller: resultViewController
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("resultViewController") as! resultViewController
+        controller.computerChoice = self.computerPick()
+        controller.playerChoice = UInt32(self.rockSelect())
+        self.presentViewController(controller, animated: true, completion: nil)
     }
     
     @IBAction func paperSelect(sender: UIButton) {
@@ -48,13 +55,7 @@ class ViewController: UIViewController {
         let playerChoice = UInt32(2)
         println("Player choice was 2")
     }
-    // end functions for player selections
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let controller = segue.destinationViewController as! resultViewController
-        controller.computerChoice = self.computerPick()
-        controller.playerChoice = playerChoice
-    }
 
 }
 
