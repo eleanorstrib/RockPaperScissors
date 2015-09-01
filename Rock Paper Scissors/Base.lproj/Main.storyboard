@@ -27,35 +27,77 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQt-yR-mAb">
-                                <rect key="frame" x="262" y="267" width="75" height="65"/>
+                                <rect key="frame" x="263" y="267" width="75" height="65"/>
                                 <state key="normal" image="paper">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectPaper:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lnY-qz-PcZ"/>
+                                    <action selector="selectPaper:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ody-Ao-rbw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-5J-FRk">
-                                <rect key="frame" x="372" y="267" width="75" height="65"/>
+                                <rect key="frame" x="374" y="267" width="75" height="65"/>
                                 <state key="normal" image="scissors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectScissors:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9tS-aZ-L8O"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click to select rock, paper or scissors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOr-UF-7HQ">
+                                <rect key="frame" x="144" y="225" width="312" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="bc2-2B-aI1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bc2-2B-aI1"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="hWM-5J-FRk" secondAttribute="centerY" id="6yZ-62-knH"/>
-                            <constraint firstAttribute="centerX" secondItem="oQt-yR-mAb" secondAttribute="centerX" id="EdO-rO-2Wm"/>
-                            <constraint firstItem="hWM-5J-FRk" firstAttribute="leading" secondItem="oQt-yR-mAb" secondAttribute="trailing" constant="35" id="IXO-5R-oAF"/>
-                            <constraint firstAttribute="centerY" secondItem="oQt-yR-mAb" secondAttribute="centerY" id="Rh8-ka-qhY"/>
-                            <constraint firstAttribute="centerY" secondItem="cT9-KC-lac" secondAttribute="centerY" id="emQ-wH-bpc"/>
-                            <constraint firstItem="oQt-yR-mAb" firstAttribute="leading" secondItem="cT9-KC-lac" secondAttribute="trailing" constant="35" id="s1i-de-cDj"/>
+                            <constraint firstItem="oQt-yR-mAb" firstAttribute="bottom" secondItem="cT9-KC-lac" secondAttribute="bottom" id="1vW-10-cwg"/>
+                            <constraint firstItem="oQt-yR-mAb" firstAttribute="leading" secondItem="cT9-KC-lac" secondAttribute="trailing" constant="36" id="3zM-XK-eSe"/>
+                            <constraint firstItem="hWM-5J-FRk" firstAttribute="leading" secondItem="oQt-yR-mAb" secondAttribute="trailing" constant="35" id="5jm-IQ-vv6"/>
+                            <constraint firstAttribute="centerY" secondItem="hWM-5J-FRk" secondAttribute="centerY" id="CVE-6y-nvq"/>
+                            <constraint firstItem="hWM-5J-FRk" firstAttribute="leading" secondItem="oQt-yR-mAb" secondAttribute="trailing" constant="36" id="Cz0-6D-i9w"/>
+                            <constraint firstItem="oQt-yR-mAb" firstAttribute="leading" secondItem="cT9-KC-lac" secondAttribute="trailing" constant="35" id="Do4-04-IDk"/>
+                            <constraint firstItem="cT9-KC-lac" firstAttribute="top" secondItem="lOr-UF-7HQ" secondAttribute="bottom" constant="21" id="E05-k3-zvg"/>
+                            <constraint firstAttribute="centerY" secondItem="cT9-KC-lac" secondAttribute="centerY" id="G8k-fC-CDC"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cT9-KC-lac" secondAttribute="bottom" constant="268" id="H81-Bh-fGN"/>
+                            <constraint firstAttribute="centerX" secondItem="lOr-UF-7HQ" secondAttribute="centerX" id="OGY-gz-nV2"/>
+                            <constraint firstAttribute="centerY" secondItem="oQt-yR-mAb" secondAttribute="centerY" id="RMG-Ko-2U5"/>
+                            <constraint firstItem="cT9-KC-lac" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="152" id="Ske-Pj-3eY"/>
+                            <constraint firstItem="oQt-yR-mAb" firstAttribute="top" secondItem="cT9-KC-lac" secondAttribute="top" id="jYC-a1-8EI"/>
+                            <constraint firstItem="lOr-UF-7HQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="205" id="mY1-Xm-z8q"/>
+                            <constraint firstItem="oQt-yR-mAb" firstAttribute="top" secondItem="lOr-UF-7HQ" secondAttribute="bottom" constant="21" id="qrQ-gb-waP"/>
+                            <constraint firstItem="oQt-yR-mAb" firstAttribute="top" secondItem="hWM-5J-FRk" secondAttribute="top" id="vo9-im-3Lt"/>
+                            <constraint firstItem="lOr-UF-7HQ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="zNr-yy-hWa"/>
+                            <constraint firstAttribute="centerX" secondItem="oQt-yR-mAb" secondAttribute="centerX" id="zWP-hx-V5W"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mY1-Xm-z8q"/>
+                                <exclude reference="zNr-yy-hWa"/>
+                                <exclude reference="E05-k3-zvg"/>
+                                <exclude reference="Ske-Pj-3eY"/>
+                                <exclude reference="1vW-10-cwg"/>
+                                <exclude reference="Do4-04-IDk"/>
+                                <exclude reference="jYC-a1-8EI"/>
+                                <exclude reference="vo9-im-3Lt"/>
+                                <exclude reference="5jm-IQ-vv6"/>
+                                <exclude reference="H81-Bh-fGN"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="paperButton" destination="oQt-yR-mAb" id="h54-UU-bh3"/>
+                        <outlet property="instructionLabel" destination="lOr-UF-7HQ" id="wJ7-uf-cEZ"/>
                         <outlet property="rockButton" destination="cT9-KC-lac" id="M7Z-VF-VSX"/>
-                        <outlet property="scissorsButton" destination="hWM-5J-FRk" id="CzQ-tl-NBD"/>
                         <segue destination="WoN-RQ-wNT" kind="presentation" identifier="goToResult" id="Uuj-6a-Gjc"/>
                     </connections>
                 </viewController>
@@ -104,7 +146,7 @@
                                     <constraint firstAttribute="height" constant="21" id="XiR-VE-O91"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

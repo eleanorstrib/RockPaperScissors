@@ -21,6 +21,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         switch (self.computerChoice!) {
         case 0, 1, 2 where self.playerChoice == self.computerChoice:
             self.resultImage.image = UIImage(named: "tie")
