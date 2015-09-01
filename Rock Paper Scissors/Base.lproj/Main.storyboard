@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="ViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="ViewController" customModule="Rock_Paper_Scissors" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -22,8 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="rockSelect" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uOr-DC-xp7"/>
-                                    <action selector="selectRock" destination="vXZ-lx-hvc" eventType="touchUpInside" id="opL-Re-OY9"/>
+                                    <action selector="selectRock:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SS5-cK-fai"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQt-yR-mAb">
@@ -32,7 +31,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="paperSelect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="68T-aB-NIs"/>
+                                    <action selector="selectPaper:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="nWz-X2-MUE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-5J-FRk">
@@ -41,7 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="scissorsSelect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EZg-pZ-mAl"/>
+                                    <action selector="selectScissors:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wgG-w5-ZOw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,75 +56,31 @@
                     </view>
                     <connections>
                         <outlet property="paperButton" destination="oQt-yR-mAb" id="woZ-Go-3C8"/>
-                        <outlet property="rockButton" destination="cT9-KC-lac" id="adm-uL-5QB"/>
+                        <outlet property="rockButton" destination="cT9-KC-lac" id="ymQ-7A-ilv"/>
                         <outlet property="scissorsButton" destination="hWM-5J-FRk" id="NKu-p0-qqd"/>
-                        <segue destination="pHg-Gd-YGC" kind="presentation" identifier="resultScreen" id="Imo-fA-GPk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="504"/>
+            <point key="canvasLocation" x="-1254" y="-1040"/>
         </scene>
         <!--Result View Controller-->
-        <scene sceneID="LN2-Lm-zMx">
+        <scene sceneID="nvY-xt-ncK">
             <objects>
-                <viewController storyboardIdentifier="resultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pHg-Gd-YGC" customClass="resultViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WoN-RQ-wNT" customClass="ResultViewController" customModule="Rock_Paper_Scissors" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5zm-Xx-B1f"/>
-                        <viewControllerLayoutGuide type="bottom" id="y0O-fc-apI"/>
+                        <viewControllerLayoutGuide type="top" id="zMQ-cA-rDD"/>
+                        <viewControllerLayoutGuide type="bottom" id="1gh-Yv-mhG"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ScD-WZ-gmY" customClass="resultViewController">
+                    <view key="view" contentMode="scaleToFill" id="XlG-Fx-InX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64u-LM-XgF">
-                                <rect key="frame" x="209" y="56" width="183" height="200"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="result goes here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdd-Ac-hDC">
-                                <rect key="frame" x="42" y="289" width="517" height="21"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-q0-yhW">
-                                <rect key="frame" x="239" y="431" width="122" height="39"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
-                                <state key="normal" title="Play again!">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="dismissResult:" destination="ScD-WZ-gmY" eventType="touchUpInside" id="5Ul-Kz-8NJ"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="64u-LM-XgF" secondAttribute="centerX" id="5Qo-fH-pnz"/>
-                            <constraint firstAttribute="centerY" secondItem="cdd-Ac-hDC" secondAttribute="centerY" id="5bL-Ed-nFd"/>
-                            <constraint firstItem="64u-LM-XgF" firstAttribute="top" secondItem="5zm-Xx-B1f" secondAttribute="bottom" constant="36" id="5td-7R-oJg"/>
-                            <constraint firstAttribute="centerX" secondItem="cdd-Ac-hDC" secondAttribute="centerX" id="6ma-FN-iKS"/>
-                            <constraint firstAttribute="centerX" secondItem="cdd-Ac-hDC" secondAttribute="centerX" id="Fog-K3-nLd"/>
-                            <constraint firstItem="y0O-fc-apI" firstAttribute="top" secondItem="rSI-q0-yhW" secondAttribute="bottom" constant="130" id="LDk-iL-U4x"/>
-                            <constraint firstAttribute="centerY" secondItem="cdd-Ac-hDC" secondAttribute="centerY" id="eQw-8e-zWn"/>
-                            <constraint firstAttribute="centerX" secondItem="rSI-q0-yhW" secondAttribute="centerX" id="mQw-Z2-0TV"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Fog-K3-nLd"/>
-                                <exclude reference="eQw-8e-zWn"/>
-                            </mask>
-                        </variation>
-                        <connections>
-                            <outlet property="playAgainButton" destination="rSI-q0-yhW" id="LAx-Sj-JFH"/>
-                            <outlet property="resultImage" destination="64u-LM-XgF" id="x84-Bd-e3L"/>
-                            <outlet property="resultText" destination="cdd-Ac-hDC" id="Rt6-Db-ZIC"/>
-                        </connections>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HN2-N0-B2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxt-1e-XcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469" y="462"/>
+            <point key="canvasLocation" x="-573" y="-1054"/>
         </scene>
     </scenes>
     <resources>

@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD4C7F681B95865A00442FF2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F671B95865A00442FF2 /* ResultViewController.swift */; };
 		FD85D31B1B8E8D34006ED389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */; };
-		FD85D31D1B8E8D34006ED389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D31C1B8E8D34006ED389 /* ViewController.swift */; };
 		FD85D3201B8E8D34006ED389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD85D31E1B8E8D34006ED389 /* Main.storyboard */; };
 		FD85D3221B8E8D34006ED389 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD85D3211B8E8D34006ED389 /* Images.xcassets */; };
 		FD85D3251B8E8D34006ED389 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD85D3231B8E8D34006ED389 /* LaunchScreen.xib */; };
 		FD85D3311B8E8D35006ED389 /* Rock_Paper_ScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D3301B8E8D35006ED389 /* Rock_Paper_ScissorsTests.swift */; };
-		FD85D33B1B8E8D92006ED389 /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D33A1B8E8D92006ED389 /* resultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +26,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD4C7F671B95865A00442FF2 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		FD85D3151B8E8D34006ED389 /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD85D3191B8E8D34006ED389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD85D31C1B8E8D34006ED389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD85D31F1B8E8D34006ED389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD85D3211B8E8D34006ED389 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FD85D3241B8E8D34006ED389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FD85D32A1B8E8D35006ED389 /* Rock Paper ScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock Paper ScissorsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD85D32F1B8E8D35006ED389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD85D3301B8E8D35006ED389 /* Rock_Paper_ScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_ScissorsTests.swift; sourceTree = "<group>"; };
-		FD85D33A1B8E8D92006ED389 /* resultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */,
-				FD85D31C1B8E8D34006ED389 /* ViewController.swift */,
 				FD85D31E1B8E8D34006ED389 /* Main.storyboard */,
 				FD85D3211B8E8D34006ED389 /* Images.xcassets */,
 				FD85D3231B8E8D34006ED389 /* LaunchScreen.xib */,
 				FD85D3181B8E8D34006ED389 /* Supporting Files */,
-				FD85D33A1B8E8D92006ED389 /* resultViewController.swift */,
+				FD4C7F671B95865A00442FF2 /* ResultViewController.swift */,
 			);
 			path = "Rock Paper Scissors";
 			sourceTree = "<group>";
@@ -215,9 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD85D33B1B8E8D92006ED389 /* resultViewController.swift in Sources */,
-				FD85D31D1B8E8D34006ED389 /* ViewController.swift in Sources */,
 				FD85D31B1B8E8D34006ED389 /* AppDelegate.swift in Sources */,
+				FD4C7F681B95865A00442FF2 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
