@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectRock:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SS5-cK-fai"/>
+                                    <action selector="selectRock" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ddq-js-GQJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQt-yR-mAb">
@@ -31,7 +31,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectPaper:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="nWz-X2-MUE"/>
+                                    <action selector="selectPaper:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lnY-qz-PcZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-5J-FRk">
@@ -39,9 +39,6 @@
                                 <state key="normal" image="scissors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="selectScissors:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wgG-w5-ZOw"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -55,14 +52,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="paperButton" destination="oQt-yR-mAb" id="woZ-Go-3C8"/>
-                        <outlet property="rockButton" destination="cT9-KC-lac" id="ymQ-7A-ilv"/>
-                        <outlet property="scissorsButton" destination="hWM-5J-FRk" id="NKu-p0-qqd"/>
+                        <outlet property="paperButton" destination="oQt-yR-mAb" id="h54-UU-bh3"/>
+                        <outlet property="rockButton" destination="cT9-KC-lac" id="M7Z-VF-VSX"/>
+                        <outlet property="scissorsButton" destination="hWM-5J-FRk" id="CzQ-tl-NBD"/>
+                        <segue destination="WoN-RQ-wNT" kind="presentation" identifier="goToResult" id="Uuj-6a-Gjc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1254" y="-1040"/>
+            <point key="canvasLocation" x="-1139" y="-1077"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="nvY-xt-ncK">
@@ -75,12 +73,50 @@
                     <view key="view" contentMode="scaleToFill" id="XlG-Fx-InX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You made it!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEg-tI-1X9">
+                                <rect key="frame" x="265" y="230" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rbc-tf-hcH">
+                                <rect key="frame" x="180" y="72" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1Bg-Qa-aH9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-MK-S64">
+                                <rect key="frame" x="265" y="444" width="70" height="30"/>
+                                <state key="normal" title="play again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissResult:" destination="WoN-RQ-wNT" eventType="touchUpInside" id="IhY-y5-c5G"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1gh-Yv-mhG" firstAttribute="top" secondItem="CEg-tI-1X9" secondAttribute="bottom" constant="349" id="6BS-pl-fLs"/>
+                            <constraint firstItem="CEg-tI-1X9" firstAttribute="leading" secondItem="XlG-Fx-InX" secondAttribute="leading" constant="265" id="DwK-AB-2A4"/>
+                            <constraint firstAttribute="centerX" secondItem="GR9-MK-S64" secondAttribute="centerX" id="IRb-zv-WFX"/>
+                            <constraint firstItem="CEg-tI-1X9" firstAttribute="top" secondItem="rbc-tf-hcH" secondAttribute="bottom" constant="30" id="Irc-Ed-fdj"/>
+                            <constraint firstItem="1gh-Yv-mhG" firstAttribute="top" secondItem="GR9-MK-S64" secondAttribute="bottom" constant="126" id="OFo-ib-MTP"/>
+                            <constraint firstAttribute="centerX" secondItem="GR9-MK-S64" secondAttribute="centerX" id="Oax-xD-FE9"/>
+                            <constraint firstItem="rbc-tf-hcH" firstAttribute="centerX" secondItem="XlG-Fx-InX" secondAttribute="centerX" id="eFg-HC-IQq"/>
+                            <constraint firstItem="rbc-tf-hcH" firstAttribute="top" secondItem="zMQ-cA-rDD" secondAttribute="bottom" constant="52" id="xfK-jE-DLS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playAgainButton" destination="GR9-MK-S64" id="21n-gl-KUi"/>
+                        <outlet property="resultImage" destination="rbc-tf-hcH" id="h9q-Yx-WoB"/>
+                        <outlet property="youMadeit" destination="CEg-tI-1X9" id="t3m-TT-ZHS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxt-1e-XcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-573" y="-1054"/>
+            <point key="canvasLocation" x="-362" y="-1077"/>
         </scene>
     </scenes>
     <resources>

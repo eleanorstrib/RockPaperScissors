@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD4C7F681B95865A00442FF2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F671B95865A00442FF2 /* ResultViewController.swift */; };
+		FD4C7F6A1B958C6D00442FF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F691B958C6D00442FF2 /* ViewController.swift */; };
 		FD85D31B1B8E8D34006ED389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */; };
 		FD85D3201B8E8D34006ED389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD85D31E1B8E8D34006ED389 /* Main.storyboard */; };
 		FD85D3221B8E8D34006ED389 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD85D3211B8E8D34006ED389 /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		FD4C7F671B95865A00442FF2 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FD4C7F691B958C6D00442FF2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD85D3151B8E8D34006ED389 /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD85D3191B8E8D34006ED389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				FD85D3231B8E8D34006ED389 /* LaunchScreen.xib */,
 				FD85D3181B8E8D34006ED389 /* Supporting Files */,
 				FD4C7F671B95865A00442FF2 /* ResultViewController.swift */,
+				FD4C7F691B958C6D00442FF2 /* ViewController.swift */,
 			);
 			path = "Rock Paper Scissors";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4C7F6A1B958C6D00442FF2 /* ViewController.swift in Sources */,
 				FD85D31B1B8E8D34006ED389 /* AppDelegate.swift in Sources */,
 				FD4C7F681B95865A00442FF2 /* ResultViewController.swift in Sources */,
 			);
