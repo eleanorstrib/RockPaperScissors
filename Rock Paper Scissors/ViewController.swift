@@ -11,7 +11,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var playerChoice: UInt32?
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
@@ -27,19 +26,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func computerPick() -> UInt32?{
+    func computerPick() -> Int?{
         //chooses a value for the computer's selection
-        let computerChoice = arc4random_uniform(3)
+        let computerChoice = Int(arc4random_uniform(3))
+        println(computerChoice)
+        println("computer choice ^")
         return(computerChoice)
     }
     
     //rock player selection and segue
     @IBAction func selectRock(){
-        let playerChoice = UInt32(0)
         var controller: ResultViewController
         controller = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
-        controller.computerChoice = self.computerPick()!
-        controller.playerChoice = playerChoice
+        controller.computerChoice = self.computerPick()
+        controller.playerChoice = Int(0)
         self.presentViewController(controller, animated: true, completion: nil)
     }
     
@@ -47,19 +47,35 @@ class ViewController: UIViewController {
         if segue.identifier == "goToResult" {
             let controller = segue.destinationViewController as! ResultViewController
             controller.computerChoice = self.computerPick()
-            controller.playerChoice = self.playerChoice
+            controller.playerChoice = 1
             println(controller.computerChoice)
         }
     }
     
     @IBAction func selectPaper(sender: UIButton) {
-        let playerChoice = UInt32(1)
+        var playerChoice = Int(1)
+        print(playerChoice)
+        println("player choice is 1")
         performSegueWithIdentifier("goToResult", sender: self)
     }
     
     @IBAction func selectScissors(sender: UIButton) {
-        let playerChoice = UInt32(2)
+        var playerChoice = Int(2)
+        print(playerChoice)
+        println("player choice is 2")
         performSegueWithIdentifier("goToResult", sender: self)
+        
     }
+    
+//    private func playerChoice(sender: UIButton) -> Int {
+//        if sender = rockButton {
+//            return 0
+//        } else if sender = paperButton {
+//            return 1
+//        } else {
+//            return 2
+//        }
+//    
+//    }
     
 }

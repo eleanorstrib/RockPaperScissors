@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 class ResultViewController: UIViewController {
-    var computerChoice: UInt32?
-    var playerChoice: UInt32?
+    var computerChoice: Int?
+    var playerChoice: Int?
     
 
     @IBOutlet weak var resultImage: UIImageView!
@@ -20,10 +20,11 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        println(playerChoice)
+        println("^playerChoice")
+
         switch (self.computerChoice!) {
-        case 0, 1, 2 where self.playerChoice == self.computerChoice:
+        case 0...2 where self.playerChoice == self.computerChoice:
             self.resultImage.image = UIImage(named: "tie")
             self.resultLabel.text="It was a tie!"
         case 0 where self.playerChoice == 1:
@@ -37,13 +38,13 @@ class ResultViewController: UIViewController {
             self.resultLabel.text = "You lose! Paper covers rock"
         case 1 where self.playerChoice == 2:
             self.resultImage.image = UIImage(named: "scissorsCutPaper")
-            self.resultLabel.text = "You lose! Scissors cut paper"
+            self.resultLabel.text = "You win! Scissors cut paper"
         case 2 where self.playerChoice == 0:
             self.resultImage.image = UIImage(named: "rockCrushesScissors")
-            self.resultLabel.text = "You lose! Rock crushes scissors"
+            self.resultLabel.text = "You win! Rock crushes scissors"
         case 2 where self.playerChoice == 1:
             self.resultImage.image = UIImage(named: "scissorsCutPaper")
-            self.resultLabel.text = "You win! Scissors cut paper"
+            self.resultLabel.text = "You lose! Scissors cut paper"
         default:
             self.resultImage.image = nil
             self.resultLabel.text = "Uh oh...something went wrong"
@@ -52,8 +53,6 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func dismissResult(sender: AnyObject) {
-        println(self.playerChoice)
-        println(self.computerChoice)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
