@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 class ResultViewController: UIViewController {
-    var computerChoice: Int?
-    var playerChoice: Int?
+    var computerChoice: Int!
+    var playerChoice: Int!
     
 
     @IBOutlet weak var resultImage: UIImageView!
