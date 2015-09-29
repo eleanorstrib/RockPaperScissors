@@ -17,6 +17,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var resultImage: UIImageView!
     @IBOutlet weak var playAgainButton: UIButton!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var showHistoryButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

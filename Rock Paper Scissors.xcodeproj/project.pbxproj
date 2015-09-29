@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD37A4A91BBB499400489622 /* PlayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37A4A81BBB499400489622 /* PlayerHistoryViewController.swift */; };
 		FD4C7F681B95865A00442FF2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F671B95865A00442FF2 /* ResultViewController.swift */; };
 		FD4C7F6A1B958C6D00442FF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F691B958C6D00442FF2 /* ViewController.swift */; };
 		FD85D31B1B8E8D34006ED389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD37A4A81BBB499400489622 /* PlayerHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerHistoryViewController.swift; path = ../PlayerHistoryViewController.swift; sourceTree = "<group>"; };
 		FD4C7F671B95865A00442FF2 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		FD4C7F691B958C6D00442FF2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD85D3151B8E8D34006ED389 /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 				FD85D3181B8E8D34006ED389 /* Supporting Files */,
 				FD4C7F671B95865A00442FF2 /* ResultViewController.swift */,
 				FD4C7F691B958C6D00442FF2 /* ViewController.swift */,
+				FD37A4A81BBB499400489622 /* PlayerHistoryViewController.swift */,
 			);
 			path = "Rock Paper Scissors";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				FD4C7F6A1B958C6D00442FF2 /* ViewController.swift in Sources */,
 				FD85D31B1B8E8D34006ED389 /* AppDelegate.swift in Sources */,
+				FD37A4A91BBB499400489622 /* PlayerHistoryViewController.swift in Sources */,
 				FD4C7F681B95865A00442FF2 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

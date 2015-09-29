@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -128,24 +127,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-MK-S64">
-                                <rect key="frame" x="245" y="444" width="110" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Q6V-3m-UfP"/>
-                                    <constraint firstAttribute="width" constant="110" id="ati-pn-Xef"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
-                                <state key="normal" title="Play Again!">
-                                    <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="dismissResult:" destination="WoN-RQ-wNT" eventType="touchUpInside" id="IhY-y5-c5G"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7g-zJ-HA7">
-                                <rect key="frame" x="16" y="289" width="577" height="21"/>
+                                <rect key="frame" x="12" y="289" width="577" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0LX-Kj-UGY"/>
                                     <constraint firstAttribute="height" constant="21" id="5nW-AM-FgW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
@@ -157,11 +142,12 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbc-tf-hcH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rbc-tf-hcH">
                                 <rect key="frame" x="209" y="67" width="183" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Akk-DT-Fns"/>
                                     <constraint firstAttribute="width" constant="183" id="Bco-5z-UzB"/>
+                                    <constraint firstAttribute="width" constant="183" id="T5r-jQ-grx"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -170,54 +156,73 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-MK-S64">
+                                <rect key="frame" x="299" y="443" width="110" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="NkE-XZ-ig2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissResult:" destination="WoN-RQ-wNT" eventType="touchUpInside" id="IhY-y5-c5G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdS-Zd-44W">
+                                <rect key="frame" x="442" y="446" width="138" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="gVg-dA-ddo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <state key="normal" title="See History">
+                                    <color key="titleColor" red="1" green="0.67101559089048957" blue="0.23566105366708534" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="u7g-zJ-HA7" secondAttribute="centerX" id="0zh-NE-3qf"/>
-                            <constraint firstItem="u7g-zJ-HA7" firstAttribute="top" secondItem="rbc-tf-hcH" secondAttribute="bottom" constant="22" id="1eC-D0-71a"/>
-                            <constraint firstAttribute="centerX" secondItem="rbc-tf-hcH" secondAttribute="centerX" id="3PK-uN-XCu"/>
-                            <constraint firstAttribute="centerX" secondItem="u7g-zJ-HA7" secondAttribute="centerX" id="4wr-Ym-DOE"/>
-                            <constraint firstItem="u7g-zJ-HA7" firstAttribute="top" secondItem="rbc-tf-hcH" secondAttribute="bottom" constant="45" id="52e-d4-NoV"/>
-                            <constraint firstAttribute="centerY" secondItem="u7g-zJ-HA7" secondAttribute="centerY" id="6uK-MT-OWj"/>
-                            <constraint firstItem="u7g-zJ-HA7" firstAttribute="leading" secondItem="XlG-Fx-InX" secondAttribute="leadingMargin" id="D6G-kb-ESa"/>
-                            <constraint firstItem="rbc-tf-hcH" firstAttribute="centerX" secondItem="u7g-zJ-HA7" secondAttribute="centerX" id="HMb-zY-UJt"/>
-                            <constraint firstItem="GR9-MK-S64" firstAttribute="centerX" secondItem="XlG-Fx-InX" secondAttribute="centerX" id="LZK-aN-C3H"/>
-                            <constraint firstAttribute="centerY" secondItem="u7g-zJ-HA7" secondAttribute="centerY" id="PbL-qt-VCs"/>
-                            <constraint firstItem="1gh-Yv-mhG" firstAttribute="top" secondItem="GR9-MK-S64" secondAttribute="bottom" constant="126" id="SNS-AP-wny"/>
-                            <constraint firstAttribute="centerX" secondItem="u7g-zJ-HA7" secondAttribute="centerX" id="XAb-UJ-0DH"/>
-                            <constraint firstAttribute="centerX" secondItem="rbc-tf-hcH" secondAttribute="centerX" id="afv-uy-YdK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="u7g-zJ-HA7" secondAttribute="trailing" constant="82" id="cgA-Wg-TXt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="u7g-zJ-HA7" secondAttribute="trailing" constant="-9" id="ehK-YQ-22l"/>
-                            <constraint firstItem="rbc-tf-hcH" firstAttribute="top" secondItem="zMQ-cA-rDD" secondAttribute="bottom" constant="24" id="uxv-42-cLe"/>
-                            <constraint firstItem="u7g-zJ-HA7" firstAttribute="top" secondItem="rbc-tf-hcH" secondAttribute="bottom" constant="45" id="vNw-if-3cr"/>
-                            <constraint firstItem="rbc-tf-hcH" firstAttribute="leading" secondItem="XlG-Fx-InX" secondAttribute="leading" constant="221" id="wiP-IQ-HYO"/>
+                            <constraint firstItem="fdS-Zd-44W" firstAttribute="leading" secondItem="GR9-MK-S64" secondAttribute="trailing" constant="33" id="3Yi-nd-TBN"/>
+                            <constraint firstAttribute="trailing" secondItem="fdS-Zd-44W" secondAttribute="trailing" constant="20" id="C5w-Rm-hEy"/>
+                            <constraint firstAttribute="centerX" secondItem="u7g-zJ-HA7" secondAttribute="centerX" id="PQi-A8-3h6"/>
+                            <constraint firstAttribute="centerY" secondItem="u7g-zJ-HA7" secondAttribute="centerY" id="QXT-yD-yal"/>
+                            <constraint firstItem="rbc-tf-hcH" firstAttribute="centerX" secondItem="u7g-zJ-HA7" secondAttribute="centerX" id="inO-ar-LUx"/>
+                            <constraint firstItem="u7g-zJ-HA7" firstAttribute="top" secondItem="rbc-tf-hcH" secondAttribute="bottom" constant="22" id="wTP-zj-eYj"/>
+                            <constraint firstItem="1gh-Yv-mhG" firstAttribute="top" secondItem="fdS-Zd-44W" secondAttribute="bottom" constant="118" id="xh0-sW-u6l"/>
+                            <constraint firstItem="1gh-Yv-mhG" firstAttribute="top" secondItem="GR9-MK-S64" secondAttribute="bottom" constant="121" id="yBK-uW-nfI"/>
+                            <constraint firstItem="rbc-tf-hcH" firstAttribute="top" secondItem="zMQ-cA-rDD" secondAttribute="bottom" constant="47" id="zrd-R0-bqr"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="3PK-uN-XCu"/>
-                                <exclude reference="HMb-zY-UJt"/>
-                                <exclude reference="uxv-42-cLe"/>
-                                <exclude reference="wiP-IQ-HYO"/>
-                                <exclude reference="0zh-NE-3qf"/>
-                                <exclude reference="4wr-Ym-DOE"/>
-                                <exclude reference="52e-d4-NoV"/>
-                                <exclude reference="D6G-kb-ESa"/>
-                                <exclude reference="PbL-qt-VCs"/>
-                                <exclude reference="cgA-Wg-TXt"/>
-                                <exclude reference="ehK-YQ-22l"/>
-                                <exclude reference="vNw-if-3cr"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="playAgainButton" destination="GR9-MK-S64" id="21n-gl-KUi"/>
                         <outlet property="resultImage" destination="rbc-tf-hcH" id="h9q-Yx-WoB"/>
                         <outlet property="resultLabel" destination="u7g-zJ-HA7" id="NKk-QC-rqU"/>
+                        <outlet property="showHistoryButton" destination="fdS-Zd-44W" id="Ryt-th-nIK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxt-1e-XcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-362" y="-1077"/>
+        </scene>
+        <!--Player History View Controller-->
+        <scene sceneID="4KI-sQ-BLi">
+            <objects>
+                <viewController id="f4s-BC-qzA" customClass="PlayerHistoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oaf-Zd-TBS"/>
+                        <viewControllerLayoutGuide type="bottom" id="n0T-bZ-C7s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eNb-Yx-guc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SgX-Io-Yro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="-1077"/>
         </scene>
     </scenes>
     <resources>
