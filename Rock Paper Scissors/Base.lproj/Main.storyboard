@@ -157,7 +157,7 @@
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-MK-S64">
-                                <rect key="frame" x="259" y="443" width="110" height="36"/>
+                                <rect key="frame" x="312" y="443" width="110" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="NkE-XZ-ig2"/>
                                 </constraints>
@@ -171,7 +171,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdS-Zd-44W">
-                                <rect key="frame" x="402" y="446" width="138" height="36"/>
+                                <rect key="frame" x="442" y="446" width="138" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138" id="gVg-dA-ddo"/>
                                 </constraints>
@@ -181,14 +181,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="f4s-BC-qzA" kind="show" id="div-oM-qj8"/>
+                                    <segue destination="f4s-BC-qzA" kind="show" identifier="showHistory" id="CDf-l0-d6y"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fdS-Zd-44W" firstAttribute="leading" secondItem="GR9-MK-S64" secondAttribute="trailing" constant="33" id="3Yi-nd-TBN"/>
-                            <constraint firstAttribute="trailing" secondItem="fdS-Zd-44W" secondAttribute="trailing" constant="60" id="C5w-Rm-hEy"/>
+                            <constraint firstItem="fdS-Zd-44W" firstAttribute="leading" secondItem="GR9-MK-S64" secondAttribute="trailing" constant="20" id="3Yi-nd-TBN"/>
+                            <constraint firstAttribute="trailing" secondItem="fdS-Zd-44W" secondAttribute="trailing" constant="20" id="C5w-Rm-hEy"/>
                             <constraint firstAttribute="centerX" secondItem="u7g-zJ-HA7" secondAttribute="centerX" id="PQi-A8-3h6"/>
                             <constraint firstAttribute="centerY" secondItem="u7g-zJ-HA7" secondAttribute="centerY" id="QXT-yD-yal"/>
                             <constraint firstItem="rbc-tf-hcH" firstAttribute="centerX" secondItem="u7g-zJ-HA7" secondAttribute="centerX" id="inO-ar-LUx"/>
@@ -212,7 +212,7 @@
         <!--Player History View Controller-->
         <scene sceneID="4KI-sQ-BLi">
             <objects>
-                <viewController id="f4s-BC-qzA" customClass="PlayerHistoryViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayerHistoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f4s-BC-qzA" customClass="PlayerHistoryViewController" customModule="Rock_Paper_Scissors" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oaf-Zd-TBS"/>
                         <viewControllerLayoutGuide type="bottom" id="n0T-bZ-C7s"/>
@@ -225,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SgX-Io-Yro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="357" y="-1077"/>
+            <point key="canvasLocation" x="305" y="-1091"/>
         </scene>
     </scenes>
     <resources>

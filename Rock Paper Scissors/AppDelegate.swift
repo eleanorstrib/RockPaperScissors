@@ -12,6 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    //create array to store history accessible throughout app
+    
+    struct History {
+        var result : String?
+        var computer : Int?
+        var player : Int?
+        var graphic : UIImage?
+    }
+    
+    var history = [History]()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
