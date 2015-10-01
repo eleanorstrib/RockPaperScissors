@@ -9,17 +9,27 @@
 import Foundation
 import UIKit
 
-class PlayerHistoryViewController: UIViewController {
+class PlayerHistoryViewController: UIViewController, UITableViewDelegate {
 
+    @IBOutlet weak var playerHistoryTable: UITableView!
+
+    
+    // import the history array from the AppDelegate
     var history: [History] {
         return(UIApplication.sharedApplication().delegate as! AppDelegate).history
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // TODO: remove print statement
-        println(history)
+    
+    // find out the number of rows/items in history and pass to the view
+    func TableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        println(history.count)
+        return history.count
     }
+    
+//    override func tableView(tableView:UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+////        let cell = tableView.dequeueReusableHeaderFooterViewWithIdentifier("gameResult") as! UITableViewCell
+////        return cell
+//    }
+
     
     
 }

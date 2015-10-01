@@ -105,6 +105,68 @@
             endingLineNumber = "16"
             landmarkName = "AppDelegate"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.AppDelegate.history.getter : Swift.Array&lt;Rock_Paper_Scissors.History&gt;"
+                  moduleName = "Rock Paper Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eleanor/Desktop/Swift_Practice/Rock%20Paper%20Scissors/Rock%20Paper%20Scissors/AppDelegate.swift"
+                  timestampString = "465429397.785834"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.AppDelegate.history.setter : Swift.Array&lt;Rock_Paper_Scissors.History&gt;"
+                  moduleName = "Rock Paper Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eleanor/Desktop/Swift_Practice/Rock%20Paper%20Scissors/Rock%20Paper%20Scissors/AppDelegate.swift"
+                  timestampString = "465429397.786538"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.AppDelegate.history.materializeForSet : Swift.Array&lt;Rock_Paper_Scissors.History&gt;"
+                  moduleName = "Rock Paper Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eleanor/Desktop/Swift_Practice/Rock%20Paper%20Scissors/Rock%20Paper%20Scissors/AppDelegate.swift"
+                  timestampString = "465429397.787041"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.AppDelegate.init (Rock_Paper_Scissors.AppDelegate.Type)() -&gt; Rock_Paper_Scissors.AppDelegate"
+                  moduleName = "Rock Paper Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eleanor/Desktop/Swift_Practice/Rock%20Paper%20Scissors/Rock%20Paper%20Scissors/AppDelegate.swift"
+                  timestampString = "465429397.78761"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
