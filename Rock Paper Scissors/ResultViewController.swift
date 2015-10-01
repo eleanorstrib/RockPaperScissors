@@ -60,17 +60,17 @@ class ResultViewController: UIViewController {
             result = "Error"
         }
         
-        func saveToArray(){
-            //set properties of new history
-            var history = History(result: result,
-                computer: self.computerChoice,
-                player: self.playerChoice,
-                graphic: self.resultImage.image)
-            let object = UIApplication.sharedApplication().delegate
-            let appDelegate = object as! AppDelegate
-            appDelegate.history.append(history)
-        }
-    
+        //set properties of the match results
+        var history = History(result: result,
+            computer: self.computerChoice,
+            player: self.playerChoice,
+            graphic: self.resultImage.image)
+        
+        // access history array in AppDelegate and append data
+        println(history)
+        let object = UIApplication.sharedApplication().delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.history.append(history)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

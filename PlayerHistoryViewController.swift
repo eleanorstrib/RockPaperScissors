@@ -17,6 +17,8 @@ class PlayerHistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // TODO: remove print statement
+        println(history)
     }
     
     
