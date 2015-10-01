@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD37A4AB1BBB5F4B00489622 /* PlayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37A4A81BBB499400489622 /* PlayerHistoryViewController.swift */; };
-		FD37A4AC1BBB5F5D00489622 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F671B95865A00442FF2 /* ResultViewController.swift */; };
-		FD37A4AD1BBCB21800489622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */; };
-		FD37A4AE1BBCB23200489622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F691B958C6D00442FF2 /* ViewController.swift */; };
-		FD37A4AF1BBCB23700489622 /* PlayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37A4A81BBB499400489622 /* PlayerHistoryViewController.swift */; };
-		FD4C7F681B95865A00442FF2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F671B95865A00442FF2 /* ResultViewController.swift */; };
-		FD4C7F6A1B958C6D00442FF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F691B958C6D00442FF2 /* ViewController.swift */; };
-		FD85D31B1B8E8D34006ED389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */; };
 		FD85D3201B8E8D34006ED389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD85D31E1B8E8D34006ED389 /* Main.storyboard */; };
 		FD85D3221B8E8D34006ED389 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD85D3211B8E8D34006ED389 /* Images.xcassets */; };
 		FD85D3251B8E8D34006ED389 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD85D3231B8E8D34006ED389 /* LaunchScreen.xib */; };
 		FD85D3311B8E8D35006ED389 /* Rock_Paper_ScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D3301B8E8D35006ED389 /* Rock_Paper_ScissorsTests.swift */; };
+		FDA4804C1BBCF6390020A7FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */; };
+		FDA4804D1BBCF6390020A7FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */; };
+		FDA4804E1BBCF63E0020A7FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F691B958C6D00442FF2 /* ViewController.swift */; };
+		FDA4804F1BBCF63E0020A7FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F691B958C6D00442FF2 /* ViewController.swift */; };
+		FDA480501BBCF6430020A7FD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F671B95865A00442FF2 /* ResultViewController.swift */; };
+		FDA480511BBCF6440020A7FD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7F671B95865A00442FF2 /* ResultViewController.swift */; };
+		FDA480521BBCF64A0020A7FD /* PlayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37A4A81BBB499400489622 /* PlayerHistoryViewController.swift */; };
+		FDA480531BBCF64A0020A7FD /* PlayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37A4A81BBB499400489622 /* PlayerHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,13 +85,13 @@
 		FD85D3171B8E8D34006ED389 /* Rock Paper Scissors */ = {
 			isa = PBXGroup;
 			children = (
-				FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */,
 				FD85D31E1B8E8D34006ED389 /* Main.storyboard */,
 				FD85D3211B8E8D34006ED389 /* Images.xcassets */,
 				FD85D3231B8E8D34006ED389 /* LaunchScreen.xib */,
 				FD85D3181B8E8D34006ED389 /* Supporting Files */,
-				FD4C7F671B95865A00442FF2 /* ResultViewController.swift */,
+				FD85D31A1B8E8D34006ED389 /* AppDelegate.swift */,
 				FD4C7F691B958C6D00442FF2 /* ViewController.swift */,
+				FD4C7F671B95865A00442FF2 /* ResultViewController.swift */,
 				FD37A4A81BBB499400489622 /* PlayerHistoryViewController.swift */,
 			);
 			path = "Rock Paper Scissors";
@@ -222,10 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD4C7F6A1B958C6D00442FF2 /* ViewController.swift in Sources */,
-				FD85D31B1B8E8D34006ED389 /* AppDelegate.swift in Sources */,
-				FD37A4AB1BBB5F4B00489622 /* PlayerHistoryViewController.swift in Sources */,
-				FD4C7F681B95865A00442FF2 /* ResultViewController.swift in Sources */,
+				FDA4804C1BBCF6390020A7FD /* AppDelegate.swift in Sources */,
+				FDA4804E1BBCF63E0020A7FD /* ViewController.swift in Sources */,
+				FDA480531BBCF64A0020A7FD /* PlayerHistoryViewController.swift in Sources */,
+				FDA480511BBCF6440020A7FD /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,11 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD37A4AD1BBCB21800489622 /* AppDelegate.swift in Sources */,
+				FDA480501BBCF6430020A7FD /* ResultViewController.swift in Sources */,
+				FDA4804F1BBCF63E0020A7FD /* ViewController.swift in Sources */,
 				FD85D3311B8E8D35006ED389 /* Rock_Paper_ScissorsTests.swift in Sources */,
-				FD37A4AE1BBCB23200489622 /* ViewController.swift in Sources */,
-				FD37A4AF1BBCB23700489622 /* PlayerHistoryViewController.swift in Sources */,
-				FD37A4AC1BBB5F5D00489622 /* ResultViewController.swift in Sources */,
+				FDA480521BBCF64A0020A7FD /* PlayerHistoryViewController.swift in Sources */,
+				FDA4804D1BBCF6390020A7FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

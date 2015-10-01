@@ -58,22 +58,19 @@ class ResultViewController: UIViewController {
             self.resultImage.image = nil
             self.resultLabel.text = "Uh oh...something went wrong"
             result = "Error"
-            
         }
         
         func saveToArray(){
             //set properties of new history
-            var history = History(
-                result: result,
+            var history = History(result: result,
                 computer: self.computerChoice,
                 player: self.playerChoice,
                 graphic: self.resultImage.image)
-            //
             let object = UIApplication.sharedApplication().delegate
             let appDelegate = object as! AppDelegate
             appDelegate.history.append(history)
         }
-        
+    
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

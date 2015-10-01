@@ -13,16 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     //create array to store history accessible throughout app
+    var history = [History]()
     
+    // define History
     struct History {
         var result : String?
         var computer : Int?
         var player : Int?
         var graphic : UIImage?
     }
-    
-    var history = [History]()
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

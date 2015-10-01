@@ -10,19 +10,14 @@ import Foundation
 import UIKit
 
 class PlayerHistoryViewController: UIViewController {
-    
+
     var history: [History] {
-        return (UIApplication.sharedApplication().delegate as! AppDelegate).history
+        return(UIApplication.sharedApplication().delegate as! AppDelegate).history
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 }
