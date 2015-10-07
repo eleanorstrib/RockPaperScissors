@@ -19,8 +19,6 @@ class PlayerHistoryViewController: UIViewController, UITableViewDataSource, UITa
     @IBAction func dismissGameHistory(sender: UIBarButtonItem) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +44,10 @@ class PlayerHistoryViewController: UIViewController, UITableViewDataSource, UITa
         
         //set table content
         cell.textLabel?.text = game.result
+        cell.textLabel?.font = UIFont(name: "Marker Felt", size: 17);
         cell.imageView?.image =  game.graphic!
         cell.detailTextLabel?.text = "You: \(game.player) Computer: \(game.computer)"
+        cell.detailTextLabel?.font = UIFont(name: "Marker Felt", size: 13);
 
         return cell
 
