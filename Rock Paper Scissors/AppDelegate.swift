@@ -47,8 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 // define History
 struct History {
-    var result : String?
-    var computer : Int?
-    var player : Int?
+    var result : String
+    var computer : String
+    var player : String
     var graphic : UIImage?
 }

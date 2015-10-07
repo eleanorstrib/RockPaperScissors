@@ -28,7 +28,6 @@ class PlayerHistoryViewController: UIViewController, UITableViewDataSource, UITa
     
     // find out the number of rows/items in history and pass to the view
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        println(history)
         return history.count
     }
     
@@ -36,10 +35,10 @@ class PlayerHistoryViewController: UIViewController, UITableViewDataSource, UITa
         let cell = tableView.dequeueReusableCellWithIdentifier("gameResult") as! UITableViewCell
         let game = history[indexPath.row]
         
-//        // Set the name and image
-//        cell.textLabel?.text = history.result
-//        cell.imageView?.image = UIImage(named: history.graphic)
-//        cell.detailTextLabel?.text = "You chose \(history.player) & the computer chose \(history.computer)"
+        //set table content
+        cell.textLabel?.text = game.result
+        cell.imageView?.image =  game.graphic!
+        cell.detailTextLabel?.text = "You: \(game.player) Computer: \(game.computer)"
 
         return cell
 

@@ -29,8 +29,6 @@ class ViewController: UIViewController {
     func computerPick() -> Int?{
         //chooses a value for the computer's selection
         let computerChoice = Int(arc4random_uniform(3))
-        println(computerChoice)
-        println("computer choice ^")
         return(computerChoice)
     }
     
@@ -54,7 +52,6 @@ class ViewController: UIViewController {
             let controller = segue.destinationViewController as! ResultViewController
             controller.computerChoice = self.computerPick()
             controller.playerChoice = playerPick(sender as! UIButton)
-            println(controller.playerChoice)
         }
     }
     

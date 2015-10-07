@@ -200,8 +200,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="LHQ-nb-ftg" firstAttribute="leading" secondItem="eNb-Yx-guc" secondAttribute="leadingMargin" constant="-16" id="0xL-ps-tSc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="LHQ-nb-ftg" secondAttribute="bottom" constant="-20" id="Fed-1y-402"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LHQ-nb-ftg" secondAttribute="trailing" constant="-16" id="JNi-4c-Wi7"/>
                             <constraint firstItem="LHQ-nb-ftg" firstAttribute="leading" secondItem="eNb-Yx-guc" secondAttribute="leadingMargin" constant="-16" id="T7T-hA-XCL"/>
+                            <constraint firstItem="LHQ-nb-ftg" firstAttribute="top" secondItem="eNb-Yx-guc" secondAttribute="topMargin" constant="20" id="eoT-kM-yYe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LHQ-nb-ftg" secondAttribute="trailing" constant="-16" id="fXk-Wj-CjL"/>
                             <constraint firstItem="n0T-bZ-C7s" firstAttribute="top" secondItem="LHQ-nb-ftg" secondAttribute="bottom" id="kJy-Gw-F2H"/>
                             <constraint firstItem="LHQ-nb-ftg" firstAttribute="top" secondItem="eNb-Yx-guc" secondAttribute="topMargin" id="kLP-la-X0g"/>
                         </constraints>
@@ -224,7 +228,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="e8D-w2-e2w">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="gameResult" id="e8D-w2-e2w">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e8D-w2-e2w" id="fqn-Hv-6HZ">
                                     <autoresizingMask key="autoresizingMask"/>
