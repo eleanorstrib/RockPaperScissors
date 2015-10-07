@@ -13,6 +13,12 @@ class PlayerHistoryViewController: UIViewController, UITableViewDataSource, UITa
 
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var playerHistoryTable: UITableView!
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    
+    
+    @IBAction func dismissGameHistory(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 
     

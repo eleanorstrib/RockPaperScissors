@@ -201,7 +201,13 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VYE-mX-XDQ">
                                 <rect key="frame" x="0.0" y="19" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="game history" id="l7j-5R-UFS"/>
+                                    <navigationItem title="game history" id="l7j-5R-UFS">
+                                        <barButtonItem key="leftBarButtonItem" title="Done" id="X0s-Eq-BKK">
+                                            <connections>
+                                                <action selector="dismissGameHistory:" destination="f4s-BC-qzA" id="Oem-Rn-3u3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -215,6 +221,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vBn-dz-G9g"/>
                     <connections>
+                        <outlet property="doneButton" destination="X0s-Eq-BKK" id="NFU-Ya-KH1"/>
                         <outlet property="navBar" destination="VYE-mX-XDQ" id="wGb-nn-ldq"/>
                         <outlet property="playerHistoryTable" destination="LHQ-nb-ftg" id="UTk-qm-f7o"/>
                     </connections>
