@@ -168,9 +168,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LHQ-nb-ftg">
-                                <rect key="frame" x="0.0" y="20" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LHQ-nb-ftg">
+                                <rect key="frame" x="0.0" y="62" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.76367170559732533" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="gameResult" textLabel="LIZ-yu-4W1" detailTextLabel="eSd-OJ-qbZ" style="IBUITableViewCellStyleSubtitle" id="Ak7-r0-bPK">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -197,21 +198,24 @@
                                     <outlet property="dataSource" destination="f4s-BC-qzA" id="ApZ-qj-laR"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VYE-mX-XDQ">
+                                <rect key="frame" x="0.0" y="19" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="game history" id="l7j-5R-UFS"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LHQ-nb-ftg" firstAttribute="leading" secondItem="eNb-Yx-guc" secondAttribute="leadingMargin" constant="-16" id="0xL-ps-tSc"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="LHQ-nb-ftg" secondAttribute="bottom" constant="-20" id="Fed-1y-402"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LHQ-nb-ftg" secondAttribute="trailing" constant="-16" id="JNi-4c-Wi7"/>
-                            <constraint firstItem="LHQ-nb-ftg" firstAttribute="leading" secondItem="eNb-Yx-guc" secondAttribute="leadingMargin" constant="-16" id="T7T-hA-XCL"/>
-                            <constraint firstItem="LHQ-nb-ftg" firstAttribute="top" secondItem="eNb-Yx-guc" secondAttribute="topMargin" constant="20" id="eoT-kM-yYe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LHQ-nb-ftg" secondAttribute="trailing" constant="-16" id="fXk-Wj-CjL"/>
-                            <constraint firstItem="n0T-bZ-C7s" firstAttribute="top" secondItem="LHQ-nb-ftg" secondAttribute="bottom" id="kJy-Gw-F2H"/>
-                            <constraint firstItem="LHQ-nb-ftg" firstAttribute="top" secondItem="eNb-Yx-guc" secondAttribute="topMargin" id="kLP-la-X0g"/>
+                            <constraint firstItem="LHQ-nb-ftg" firstAttribute="leading" secondItem="eNb-Yx-guc" secondAttribute="leading" id="7kx-g5-qjV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="LHQ-nb-ftg" secondAttribute="bottom" constant="-62" id="D2a-kn-6Bw"/>
+                            <constraint firstItem="LHQ-nb-ftg" firstAttribute="top" secondItem="oaf-Zd-TBS" secondAttribute="bottom" constant="42" id="IgA-pb-JTI"/>
+                            <constraint firstAttribute="trailing" secondItem="LHQ-nb-ftg" secondAttribute="trailing" id="yq5-si-QPF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vBn-dz-G9g"/>
                     <connections>
+                        <outlet property="navBar" destination="VYE-mX-XDQ" id="wGb-nn-ldq"/>
                         <outlet property="playerHistoryTable" destination="LHQ-nb-ftg" id="UTk-qm-f7o"/>
                     </connections>
                 </viewController>

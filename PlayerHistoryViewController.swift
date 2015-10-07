@@ -11,7 +11,10 @@ import UIKit
 
 class PlayerHistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var playerHistoryTable: UITableView!
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
