@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>80BE86DC-EFD9-4B4D-B9D0-A59796E0B39B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Rock Paper Scissors</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>EB19C2640C89DFC79A1C5E2A6BB0EAD97BD8392B</key>
 		<string>https://github.com/eleanorstrib/RockPaperScissors.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Rock Paper Scissors.xcodeproj</string>
+	<string>Rock Paper Scissors.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>EB19C2640C89DFC79A1C5E2A6BB0EAD97BD8392B</key>
